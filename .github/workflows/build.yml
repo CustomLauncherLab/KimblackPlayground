@@ -1,6 +1,9 @@
 name: Build
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   release:
@@ -33,6 +36,12 @@ jobs:
 
       - name: Build
         env:
+          PFX_DOWNLOAD_URL: ${{ secrets.PFX_DOWNLOAD_URL }}
+          CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run dist
+        run: |
+          curl -o ./gotiger.pfx $PFX_DOWNLOAD_URL
+          export CSC_LINK=./gotiger.pfx
+          export CSC_KEY_PASSWORD=$CSC_KEY_PASSWORD
+          npm run dist
         shell: bash

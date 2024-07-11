@@ -2,6 +2,7 @@
  * Script for landing.ejs
  */
 // Requirements
+const fs = require('fs-extra');
 const { URL }                 = require('url')
 const {
     MojangRestAPI,
@@ -127,6 +128,17 @@ document.getElementById('launch_button').addEventListener('click', async e => {
     }
 })
 
+// 스크린샷 버튼
+document.getElementById('screenshotsMediaButton').onclick = async e => {
+    const screenshotDir = path.join(
+        ConfigManager.getInstanceDirectory(),
+        ConfigManager.getSelectedServer(),
+        'screenshots'
+    );
+    await fs.ensureDir(screenshotDir);
+    shell.openPath(screenshotDir);
+};
+
 // Bind settings button
 document.getElementById('settingsMediaButton').onclick = async e => {
     await prepareSettings()
@@ -230,9 +242,9 @@ const refreshMojangStatuses = async function(){
         }
     }
     
-    document.getElementById('mojangStatusEssentialContainer').innerHTML = tooltipEssentialHTML
-    document.getElementById('mojangStatusNonEssentialContainer').innerHTML = tooltipNonEssentialHTML
-    document.getElementById('mojang_status_icon').style.color = MojangRestAPI.statusToHex(status)
+    // document.getElementById('mojangStatusEssentialContainer').innerHTML = tooltipEssentialHTML
+    // document.getElementById('mojangStatusNonEssentialContainer').innerHTML = tooltipNonEssentialHTML
+    // document.getElementById('mojang_status_icon').style.color = MojangRestAPI.statusToHex(status)
 }
 
 const refreshServerStatus = async (fade = false) => {

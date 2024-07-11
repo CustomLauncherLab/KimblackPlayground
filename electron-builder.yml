@@ -1,8 +1,8 @@
-appId: 'helioslauncher'
-productName: 'Helios Launcher'
-artifactName: '${productName}-setup-${version}.${ext}'
+appId: 'KimblackPlayground'
+productName: '블랙의 놀이터'
+artifactName: 'KimblackPlayground-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2018-2024 Daniel Scalzi'
+copyright: 'Copyright © 2024 gotiger'
 
 asar: true
 compression: 'maximum'
@@ -14,10 +14,11 @@ extraResources:
   - 'libraries'
 
 # Windows Configuration
-win: 
-  target: 
+win:
+  target:
     - target: 'nsis'
       arch: 'x64'
+  publisherName: 'gotiger'
 
 # Windows Installer Configuration
 nsis:
@@ -33,18 +34,19 @@ mac:
       arch:
         - 'x64'
         - 'arm64'
-  artifactName: '${productName}-setup-${version}-${arch}.${ext}'
+  artifactName: 'KimblackPlayground-setup-${version}-${arch}.${ext}'
   category: 'public.app-category.games'
 
 # Linux Configuration
-linux: 
+linux:
   target: 'AppImage'
-  maintainer: 'Daniel Scalzi'
-  vendor: 'Daniel Scalzi'
+  maintainer: 'gotiger'
+  vendor: 'gotiger'
   synopsis: 'Modded Minecraft Launcher'
-  description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.'
+  description:
+    'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled
+    automatically.'
   category: 'Game'
-
 
 directories:
   buildResources: 'build'

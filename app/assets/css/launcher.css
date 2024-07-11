@@ -8,18 +8,8 @@
  ******************************************************************************/
 
 @font-face {
-    font-family: 'Avenir Book';
-    src: url('../fonts/Avenir-Book.ttf');
-}
-
-@font-face {
-    font-family: 'Avenir Medium';
-    src: url('../fonts/Avenir-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'Ringbearer';
-    src: url('../fonts/Ringbearer.ttf');
+    font-family: 'Maplestory Light';
+    src: url('../fonts/Maplestory_Light.ttf');
 }
 
 /*******************************************************************************
@@ -42,8 +32,9 @@ p {
 
 /* Set default font and color. */
 body, button {
-    font-family: 'Avenir Book';
+    font-family: 'Maplestory Light';
     color: white;
+    font-size: 23;
 }
 
 /*body {
@@ -110,7 +101,7 @@ body, button {
 }
 #frameTitleText {
     font-size: 14px;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     letter-spacing: 0.5px;
 }
 
@@ -118,7 +109,7 @@ body, button {
 #frameButtonDockWin {
     -webkit-app-region: no-drag !important;
     position: relative;
-    top: -2px;
+    top: -5px;
     right: -2px;
     height: 22px;
 }
@@ -284,7 +275,7 @@ body, button {
 }
 
 #welcomeHeader {
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     text-align: center;
     color: white;
     margin-bottom: 25px;
@@ -497,7 +488,7 @@ body, button {
 
 /* Header on login view. */
 #loginSubheader {
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     margin-bottom: 25px;
     font-size: 12px;
     letter-spacing: 1px;
@@ -522,7 +513,7 @@ body, button {
 
 /* Span which displays errors related to login field content. */
 .loginErrorSpan {
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     font-weight: bold;
     font-size: 8px;
     color: #ff1b0c;
@@ -558,7 +549,7 @@ body, button {
 
 /* Login text input styles. */
 .loginField {
-    font-family: 'Avenir Book';
+    font-family: 'Maplestory Light';
     background: none;
     border-width: 1.5px 0px 0px 0px;
     border-style: solid;
@@ -1093,7 +1084,7 @@ body, button {
     justify-content: center;
 }
 #settingsNavHeaderText {
-    font-size: 20px;
+    font-size: 35px;
 }
 
 /* Navigation items outer container. */
@@ -1152,6 +1143,7 @@ body, button {
     height: 1px;
     background: rgba(126, 126, 126, 0.57);
     margin-left: auto;
+    margin-top: 15px;
     margin-bottom: 25px;
 }
 
@@ -1221,8 +1213,8 @@ body, button {
     margin-bottom: 20px;
 }
 .settingsTabHeaderText {
-    font-size: 20px;
-    font-family: 'Avenir Medium';
+    font-size: 30px;
+    font-family: 'Maplestory Light';
 }
 .settingsTabHeaderDesc {
     font-size: 12px;
@@ -1261,7 +1253,7 @@ body, button {
     background: none;
     font-size: 12px;
     border-radius: 3px;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     transition: 0.25s ease;
     cursor: pointer;
     outline: none;
@@ -1293,7 +1285,7 @@ body, button {
     background: rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     border: 1px solid rgba(126, 126, 126, 0.57);
-    font-family: 'Avenir Book';
+    font-family: 'Maplestory Light';
     transition: 0.25s ease;
 }
 #settingsContainer input[type=number]:focus,
@@ -1322,7 +1314,7 @@ body, button {
 }
 .settingsFieldTitle {
     font-size: 14px;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     color: rgba(255, 255, 255, 0.95);
 }
 .settingsFieldDesc {
@@ -1485,7 +1477,7 @@ input:checked + .toggleSwitchSlider:before {
     width: 89%;
 }
 .settingsFileSelDesc strong {
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
 }
 
 /* * *
@@ -1593,7 +1585,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 12px;
     color: grey;
     font-weight: bold;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
 }
 .settingsAuthAccountDetailValue {
     font-size: 14px;
@@ -1615,7 +1607,7 @@ input:checked + .toggleSwitchSlider:before {
     border: none;
     white-space: nowrap;
     background: none;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     outline: none;
     transition: 0.25s ease;
 }
@@ -1640,7 +1632,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     font-size: 12px;
     border-radius: 3px;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     transition: 0.25s ease;
     cursor: pointer;
     outline: none;
@@ -2195,7 +2187,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Release type text. */
 #settingsAboutCurrentVersionTitle {
     font-size: 12px;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     color: #23aa23;
     font-weight: bold;
 }
@@ -2284,7 +2276,7 @@ input:checked + .toggleSwitchSlider:before {
     background-color: rgba(255, 255, 255, 0.25);
     color: white;
     border-radius: 3px;
-    font-family: 'Avenir Book';
+    font-family: 'Maplestory Light';
 }
 .settingsChangelogText li+li {
     margin-top: .25em;
@@ -2394,7 +2386,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Release type text. */
 #settingsUpdateVersionTitle {
     font-size: 12px;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     color: #23aa23;
     font-weight: bold;
 }
@@ -2489,7 +2481,7 @@ input:checked + .toggleSwitchSlider:before {
     transition: top 2s ease;
     top: 0px;
     height: 100%;
-    width: 33%;
+    width: 45%;
     display: inline-flex;
     justify-content: center;
 }
@@ -2505,7 +2497,7 @@ input:checked + .toggleSwitchSlider:before {
     transition: top 2s ease;
     top: 0px;
     height: 100%;
-    width: 34%;
+    width: 50%;
     display: inline-flex;
     justify-content: center;
 }
@@ -2520,7 +2512,7 @@ input:checked + .toggleSwitchSlider:before {
     transition: top 2s ease;
     top: 0px;
     height: 100%;
-    width: 33%;
+    width: 40%;
     display: inline-flex;
 }
 
@@ -2593,7 +2585,7 @@ input:checked + .toggleSwitchSlider:before {
 #newsArticleTitle {
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     color: white;
     text-decoration: none;
     transition: 0.25s ease;
@@ -2910,7 +2902,7 @@ input:checked + .toggleSwitchSlider:before {
     z-index: 1;
     top: 115%;
     left: -17.5px;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
 }
@@ -3013,7 +3005,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* User profile name text. */
 #user_text {
-    font-size: 12px;
+    font-size: 25px;
     min-width: 135px;
     font-weight: 900;
     letter-spacing: 1px;
@@ -3047,12 +3039,13 @@ input:checked + .toggleSwitchSlider:before {
     justify-content: center;
     align-items: center;
     height: 27px;
+    margin-bottom: 0.1em
 }
 
 /* Divider bar between the external and internal icons. */
 .mediaDivider {
-    height: 1px;
-    width: 14px;
+    height: 2px;
+    width: 20px;
     background: rgb(255, 255, 255);
     margin: 10px 0px;
 }
@@ -3060,16 +3053,15 @@ input:checked + .toggleSwitchSlider:before {
 /* Social media icon shared styles. */
 .mediaSVG {
     fill: #ffffff;
-    height: 12px;
+    height: 30px;
     transition: 0.25s ease;
     cursor: pointer;
-    height: 12px;
     width: 25px;
 }
 .mediaSVG:hover,
 .mediaURL:focus .mediaSVG,
 .mediaSVG:active {
-    height: 20px;
+    height: 23px;
 }
 
 /* Social media URL shared styles. */
@@ -3092,18 +3084,29 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Settings icon colors. */
-#settingsSVG {
+#settingsSVG,
+#screenshotsSVG {
     stroke: #ffffff;
-    height: 15px;
+    height: 100%;
 }
 .mediaButton:hover #settingsSVG,
 .mediaButton:focus #settingsSVG,
-.mediaButton:active #settingsSVG {
+.mediaButton:active #settingsSVG,
+.mediaButton:hover #screenshotsSVG,
+.mediaButton:focus #screenshotsSVG,
+.mediaButton:active #screenshotsSVG {
     height: 23px;
 }
 
 /* Settings tooltip styles. */
 #settingsTooltip {
+    right: 130%;
+}
+#screenshotsTooltip {
+    right: 90%
+}
+#settingsTooltip,
+#screenshotsTooltip {
     visibility: hidden;
     opacity: 0;
     width: 75px;
@@ -3113,12 +3116,13 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 4px;
     position: absolute;
     z-index: 1;
-    right: 130%;
+    /* right: 130%; */
     font-size: 12px;
     line-height: 20px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
 }
-#settingsTooltip::after {
+#settingsTooltip::after,
+#screenshotsTooltip::after {
     content: " ";
     position: absolute;
     top: 50%;
@@ -3130,7 +3134,10 @@ input:checked + .toggleSwitchSlider:before {
 }
 .mediaButton:hover #settingsTooltip,
 .mediaButton:focus #settingsTooltip,
-.mediaButton:active #settingsTooltip {
+.mediaButton:active #settingsTooltip,
+.mediaButton:hover #screenshotsTooltip,
+.mediaButton:focus #screenshotsTooltip,
+.mediaButton:active #screenshotsTooltip {
     visibility: visible;
     opacity: 1;
     transition-delay:0s;
@@ -3181,7 +3188,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Style for a general label on the bottom of the landing view. */
 .bot_label {
-    font-size: 9px;
+    font-size: 15px;
     letter-spacing: 1px;
     font-weight: bold;
     text-shadow: 0px 0px 0px #bebcbb;
@@ -3203,13 +3210,13 @@ input:checked + .toggleSwitchSlider:before {
 /* Maintains maximum width on the status bar. */
 #server_status_wrapper {
     display: inline-flex;
-    width: 75px;
+    width: 200px;
 }
 
 /* Span which displays the player count of the selected server. */
 #player_count {
     color: #949494;
-    font-size: 8px;
+    font-size: 15px;
     font-weight: 900;
     text-shadow: 0px 0px 20px #949494;
     margin-left: 10px;
@@ -3242,7 +3249,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 4px;
     padding: 5px 10px;
     z-index: 1;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     font-size: 12px;
     transition: visibility 0s linear 0.25s, opacity 0.25s ease;
     bottom: calc(100% + 15px);
@@ -3557,7 +3564,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Overlay title styles. */
 #overlayTitle {
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -3583,7 +3590,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: 1px solid #ffffff;
     color: white;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     font-weight: bold;
     border-radius: 2px;
     padding: 0px 8.1px;
@@ -3635,7 +3642,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Server selection header. */
 #serverSelectHeader,
 #accountSelectHeader {
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     font-size: 20px;
     font-weight: bold;
     color: #fff;
@@ -3858,7 +3865,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: 1px solid #ffffff;
     color: white;
-    font-family: 'Avenir Medium';
+    font-family: 'Maplestory Light';
     font-weight: bold;
     border-radius: 2px;
     padding: 0px 8.1px;
